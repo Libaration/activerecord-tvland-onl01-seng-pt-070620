@@ -6,9 +6,9 @@ class Character < ActiveRecord::Base
     "#{self.name} always says: #{self.catchphrase}"
   end
 
-  def build_show(opts = {})
-    self.show = Show.find_or_create_by(opts.keys.first => opts[opts.keys.first])
-  end
+  # def build_show(opts = {})
+  #   self.show = Show.find_or_create_by(opts.keys.first => opts[opts.keys.first])
+  # end
 
 
 end
